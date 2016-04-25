@@ -10,3 +10,14 @@ Swagger - 前后端分离后的契约：http://www.cnblogs.com/whitewolf/p/46861
 IntegrationContractTest：http://martinfowler.com/bliki/IntegrationContractTest.html  
 Mock.js：http://mockjs.com/  
 也谈基于NodeJS的全栈式开发（基于NodeJS的前后端分离）：http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/
+
+## 大致实现
+
+### 数据mock  
+根据接口文档约定的接口模式，自动生成测试数据（Mock.js），提供给前端使用，这样前端同学就不需要再等待java等开发来提供数据。这一块可在数据mock服务器实现。
+
+### 使用java提供的数据
+java开发人员不需要关心数据提供的具体格式，只需要遵循`前后端分离的契约`提供数据，Node.js通过接口服务器请求数据过来后，通过json-map/json-transform等将数据转化为前端可以使用的json数据格式。
+
+### 实现同构
+使用基于react等的前端框架，实现前端模板在服务端的渲染，提升浏览器首次渲染的时候的打开速度，同时也解决前后端分离seo的问题。
