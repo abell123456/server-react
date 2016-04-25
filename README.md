@@ -1,5 +1,5 @@
 # server-react
-服务端渲染react，实现同构
+服务端渲染react，实现同构；数据mock，前端开发不用再等java/php等其他服务端；遵循约定，将接口数据转化为前端可用的JSON格式。
 
 ## 参考资料收集
 React同构实践与思考：http://zhuanlan.zhihu.com/p/20669111  
