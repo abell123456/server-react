@@ -22,3 +22,39 @@ java开发人员不需要关心数据提供的具体格式，只需要遵循`前
 
 ### 实现同构
 使用基于react等的前端框架，实现前端模板在服务端的渲染，提升浏览器首次渲染的时候的打开速度，同时也解决前后端分离seo的问题。
+
+## 目前的实现
+目前只是实现了前后端的基于React的同构。运行步骤如下：
+
+	* 1.2.1、安装依赖包：npm install
+ 	* 1.2.2、运行 node app
+
+	* 打开页面：<http://localhost:3000/home>
+
+## 目录结构
+```
+server-react
+├── app
+│   ├── assets (静态资源目录，可选)
+│   │   ├── build
+│   │   ├── src
+│   │   │    ├── img
+│   │   │    ├── js
+│   │   │    └── css
+│   │   ├── package.json（前端独有依赖）
+│   │   └── webpack.config.js（不解释）
+│   ├── middleware (你应用的中间件)
+│   │   └── static.js（前端静态资源托管中间件）
+│   ├── plugin (可选)
+│   │   └── reactview（reactview插件）
+│   └── views (可选，由 view 插件规范)
+│       ├── layout
+│       │    └── Default.js
+│       ├── Device.js
+│       └── Home.js
+├── .babelrc
+├── .gitgnore
+├── app.js
+├── package.json
+└── README.md
+```
