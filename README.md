@@ -10,7 +10,8 @@ Swagger - 前后端分离后的契约：http://www.cnblogs.com/whitewolf/p/46861
 IntegrationContractTest：http://martinfowler.com/bliki/IntegrationContractTest.html  
 Mock.js：http://mockjs.com/  
 也谈基于NodeJS的全栈式开发（基于NodeJS的前后端分离）：http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/  
-JSON Schema（##important##）:http://json-schema.org
+JSON Schema（##important##）:http://json-schema.org  
+贴吧 React 最佳实践: https://github.com/fex-team/fit/issues/1
 
 ## 大致实现
 
